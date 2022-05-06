@@ -1,17 +1,17 @@
 // se clicco su hamburger menu si aprirà il menu a tendina
-const fas = document.querySelector('fas');
+const fas = document.querySelector('.fas');
 
 fas.addEventListener('click',
 
     function() {
         
-        const open = document.querySelector('hamburger-menu');
+        let open = document.querySelector('.hamburger-menu');
 
-        if (open === "none") {
-            open = "block";
+        if (open === '.fas') {
+            open.style.display = 'none';
             console.log(open);
         } else {
-            open = "none";
+            open.style.display = 'block';
             console.log(open);
         }
     }
